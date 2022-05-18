@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using System.Diagnostics;
 
 namespace Školní_Aplikace
 {
@@ -12,6 +13,7 @@ namespace Školní_Aplikace
     {
         public MainPage()
         {
+            Debug.WriteLine("ahoj");
             InitializeComponent();
         }
     }
