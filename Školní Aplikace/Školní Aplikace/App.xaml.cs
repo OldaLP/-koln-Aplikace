@@ -10,25 +10,24 @@ using Xamarin.Forms.Xaml;
 
 namespace Školní_Aplikace
 {
+ 
     public partial class App : Application
     {
-        List<Uzel> List_Pointeru_Bodu;
+        List<Uzel> Uzly;
         public App()
         {
             InitializeComponent();
-
             MainPage = new MainPage();
         }
 
         protected override void OnStart()
         {
             Debug.WriteLine("ahoj");
-            List_Pointeru_Bodu = new List<Uzel>();
+            Uzly = new List<Uzel>();
             for (int i = 0; i < 10; i++)
             {
-                Uzel Graph_Bod_1 = new Uzel();
                 Debug.WriteLine(i);
-                List_Pointeru_Bodu.Add(Graph_Bod_1);
+                Uzly.Add(new Uzel());
             }
         }
 
@@ -40,9 +39,10 @@ namespace Školní_Aplikace
         {
         }
 
-        public void Connections()
+        public void SetUpConnections()
         {
-            List_Pointeru_Bodu[1].Connection(List_Pointeru_Bodu[2], 3);
+            Uzly[0].ConnectUzel(Uzly[2], 3);
+            Uzly[0].jmeno = "Vstup";
 
 
 

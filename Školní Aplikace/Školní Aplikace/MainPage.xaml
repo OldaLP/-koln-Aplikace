@@ -4,8 +4,8 @@
              x:Class="Školní_Aplikace.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="DarkOliveGreen" Padding="5" CornerRadius="0">
-            <Label Text="amogus" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Frame BackgroundColor="Red" Padding="5" CornerRadius="0">
+            <Label Text="amogus" HorizontalTextAlignment="Center" TextColor="Aqua" FontSize="36"/>
         </Frame>
         <Button Text="sus">
         </Button>
